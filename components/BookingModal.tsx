@@ -27,8 +27,10 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   // Mobile focus and scroll management
   useEffect(() => {
     if (isOpen) {
-      // Prevent body scroll on mobile
-      document.body.style.overflow = 'hidden';
+      // Prevent body scroll only on mobile
+      if (window.innerWidth <= 768) {
+        document.body.style.overflow = 'hidden';
+      }
 
       // Focus the modal container for accessibility
       const modalElement = document.querySelector('[role="dialog"]');
@@ -138,7 +140,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             </div>
 
             {/* Form */}
-            <div className="p-4 md:p-6 overflow-y-auto md:max-h-[calc(90vh-120px)]">
+            <div className="p-4 md:p-6 overflow-y-auto h-[calc(100vh-80px)] md:h-auto md:max-h-[calc(90vh-120px)]">
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 {/* Contact Information */}
                 <div>
