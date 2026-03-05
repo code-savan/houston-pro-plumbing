@@ -118,7 +118,7 @@ export default function TermsOfService() {
               <div className="bg-slate-50 rounded-lg p-4 mt-4">
                 <p className="text-slate-600">DYZ Plumbing</p>
                 <p className="text-slate-600">Houston, TX</p>
-                <p className="text-slate-600">Phone: (713) 555-0123</p>
+                <p className="text-slate-600">Phone: +1 832-877-9600</p>
                 <p className="text-slate-600">Email: service@dyzplumbing.com</p>
               </div>
             </section>

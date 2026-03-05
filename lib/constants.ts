@@ -1,6 +1,6 @@
 export const BUSINESS_DETAILS = {
   name: "DYZ Plumbing",
-  phone: "(713) 555-0123",
+  phone: "+1 832-877-9600",
   email: "service@dyzplumbing.com",
   city: "Houston, TX",
   niche: "Plumbing",
