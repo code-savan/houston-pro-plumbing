@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - DYZ Plumbing',
-  description: 'DYZ Plumbing privacy policy - How we collect, use, and protect your personal information.',
+  title: 'Privacy Policy - YB Plumbing & Hydro Jetting Services',
+  description: 'YB Plumbing & Hydro Jetting Services privacy policy - How we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPolicy() {
@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Information We Collect</h2>
               <p className="text-slate-600 leading-relaxed">
-                DYZ Plumbing collects information you provide directly to us, such as when you contact us for services, request a quote, or schedule an appointment. This may include:
+                YB Plumbing & Hydro Jetting Services collects information you provide directly to us, such as when you contact us for services, request a quote, or schedule an appointment. This may include:
               </p>
               <ul className="list-disc pl-6 text-slate-600 space-y-2">
                 <li>Name and contact information (phone number, email, address)</li>
@@ -78,10 +78,10 @@ export default function PrivacyPolicy() {
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
               <div className="bg-slate-50 rounded-lg p-4 mt-4">
-                <p className="text-slate-600">DYZ Plumbing</p>
+                <p className="text-slate-600">YB Plumbing & Hydro Jetting Services</p>
                 <p className="text-slate-600">Houston, TX</p>
-                <p className="text-slate-600">Phone: +1 832-877-9600</p>
-                <p className="text-slate-600">Email: service@dyzplumbing.com</p>
+                <p className="text-slate-600">Phone: +1 713-766-6663</p>
+                <p className="text-slate-600">Email: service@ybplumbing.com</p>
               </div>
             </section>
           </div>

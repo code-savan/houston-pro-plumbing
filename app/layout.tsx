@@ -13,8 +13,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Houston Pro Plumbing | Fast, Fair & Reliable Plumbers in Houston',
-  description: 'Houston\'s Trusted Plumber — Fast, Fair & Reliable. From leaky pipes to full installations, we get it done right. Serving Houston & surrounding areas.',
+  title: 'YB Plumbing & Hydro Jetting Services | Professional Plumbing in Houston',
+  description: 'YB Plumbing & Hydro Jetting Services — Professional plumbing and hydro jetting services in Houston. From emergency repairs to hydro jetting, we get it done right. Serving Houston & surrounding areas.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

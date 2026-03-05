@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - DYZ Plumbing',
-  description: 'DYZ Plumbing terms of service - Agreement for plumbing services and use of our website.',
+  title: 'Terms of Service - YB Plumbing & Hydro Jetting Services',
+  description: 'YB Plumbing & Hydro Jetting Services terms of service - Agreement for plumbing services and use of our website.',
 };
 
 export default function TermsOfService() {
@@ -22,14 +22,14 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Agreement to Terms</h2>
               <p className="text-slate-600 leading-relaxed">
-                By using DYZ Plumbing's services or website, you agree to these Terms of Service. If you do not agree to these terms, please do not use our services.
+                By using YB Plumbing & Hydro Jetting Services's services or website, you agree to these Terms of Service. If you do not agree to these terms, please do not use our services.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Services Description</h2>
               <p className="text-slate-600 leading-relaxed">
-                DYZ Plumbing provides professional plumbing services including but not limited to:
+                YB Plumbing & Hydro Jetting Services provides professional plumbing services including but not limited to:
               </p>
               <ul className="list-disc pl-6 text-slate-600 space-y-2">
                 <li>Emergency plumbing repairs</li>
@@ -64,14 +64,14 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Warranty and Guarantees</h2>
               <p className="text-slate-600 leading-relaxed">
-                DYZ Plumbing stands behind our workmanship with a 30-day warranty on labor and manufacturer warranties on parts. This warranty does not cover damage caused by misuse, improper maintenance, or external factors.
+                YB Plumbing & Hydro Jetting Services stands behind our workmanship with a 30-day warranty on labor and manufacturer warranties on parts. This warranty does not cover damage caused by misuse, improper maintenance, or external factors.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Limitation of Liability</h2>
               <p className="text-slate-600 leading-relaxed">
-                DYZ Plumbing shall not be liable for any indirect, incidental, special, or consequential damages resulting from our services. Our total liability for any claim shall not exceed the amount paid for the specific service in question.
+                YB Plumbing & Hydro Jetting Services shall not be liable for any indirect, incidental, special, or consequential damages resulting from our services. Our total liability for any claim shall not exceed the amount paid for the specific service in question.
               </p>
             </section>
 
@@ -85,7 +85,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Property Access</h2>
               <p className="text-slate-600 leading-relaxed">
-                Customers must provide safe and reasonable access to plumbing systems. DYZ Plumbing is not responsible for damage to existing systems that were not properly maintained or that fail during normal service procedures.
+                Customers must provide safe and reasonable access to plumbing systems. YB Plumbing & Hydro Jetting Services is not responsible for damage to existing systems that were not properly maintained or that fail during normal service procedures.
               </p>
             </section>
 
@@ -106,7 +106,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Changes to Terms</h2>
               <p className="text-slate-600 leading-relaxed">
-                DYZ Plumbing reserves the right to modify these terms at any time. Changes will be effective immediately upon posting to our website.
+                YB Plumbing & Hydro Jetting Services reserves the right to modify these terms at any time. Changes will be effective immediately upon posting to our website.
               </p>
             </section>
 
@@ -116,10 +116,10 @@ export default function TermsOfService() {
                 For questions about these Terms of Service, please contact:
               </p>
               <div className="bg-slate-50 rounded-lg p-4 mt-4">
-                <p className="text-slate-600">DYZ Plumbing</p>
+                <p className="text-slate-600">YB Plumbing & Hydro Jetting Services</p>
                 <p className="text-slate-600">Houston, TX</p>
-                <p className="text-slate-600">Phone: +1 832-877-9600</p>
-                <p className="text-slate-600">Email: service@dyzplumbing.com</p>
+                <p className="text-slate-600">Phone: +1 713-766-6663</p>
+                <p className="text-slate-600">Email: service@ybplumbing.com</p>
               </div>
             </section>
           </div>

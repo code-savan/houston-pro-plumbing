@@ -1,7 +1,7 @@
 export const BUSINESS_DETAILS = {
-  name: "DYZ Plumbing",
-  phone: "+1 832-877-9600",
-  email: "service@dyzplumbing.com",
+  name: "YB Plumbing & Hydro Jetting Services",
+  phone: "+1 713-766-6663",
+  email: "service@ybplumbing.com",
   city: "Houston, TX",
   niche: "Plumbing",
   address: "Houston, TX",
