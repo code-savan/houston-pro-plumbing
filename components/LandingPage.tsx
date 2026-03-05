@@ -106,7 +106,7 @@ export default function LandingPage() {
             priority
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-navy/80 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-navy/60 backdrop-blur-[2px]"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/60 to-transparent"></div>
         </div>
 
@@ -195,9 +195,9 @@ export default function LandingPage() {
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-orange/10 rounded-full blur-2xl"></div>
                 <div className="inline-flex items-center gap-2 text-orange font-bold uppercase tracking-widest text-xs md:text-sm mb-4">
                   <span className="w-8 h-px bg-orange"></span>
-                  About Houston Pro Plumbing
+                  About DYZ Plumbing
                 </div>
-                <h2 className="text-3xl md:text-5xl font-display font-bold text-navy mb-6 md:mb-8 leading-tight">
+                <h2 className="text-3xl md:text-5xl font-display font-bold text-navy mb-4">
                   Local Plumbers You Can Actually <span className="text-orange">Trust</span>
                 </h2>
                 <div className="space-y-4 md:space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
@@ -260,10 +260,10 @@ export default function LandingPage() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 text-orange font-bold uppercase tracking-widest text-sm mb-4">
                 <span className="w-8 h-px bg-orange"></span>
-                The Houston Pro Difference
+                The DYZ Difference
               </div>
               <h2 className="text-3xl md:text-6xl font-display font-bold leading-tight">
-                Why Houston Homeowners <span className="text-orange">Call Us First</span>
+                Why Houston Homeowners <span className="text-orange">Call DYZ First</span>
               </h2>
             </div>
             <p className="text-gray-400 text-base md:text-lg max-w-md lg:text-right">

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Houston Pro Plumbing',
-  description: 'Houston Pro Plumbing privacy policy - How we collect, use, and protect your personal information.',
+  title: 'Privacy Policy - DYZ Plumbing',
+  description: 'DYZ Plumbing privacy policy - How we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPolicy() {
@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
           <h1 className="text-3xl md:text-4xl font-display font-bold text-navy mb-8">
             Privacy Policy
           </h1>
-          
+
           <div className="prose prose-slate max-w-none space-y-6">
             <p className="text-slate-600 leading-relaxed">
               Last updated: {new Date().toLocaleDateString()}
@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-display font-bold text-navy mb-4">Information We Collect</h2>
               <p className="text-slate-600 leading-relaxed">
-                Houston Pro Plumbing collects information you provide directly to us, such as when you contact us for services, request a quote, or schedule an appointment. This may include:
+                DYZ Plumbing collects information you provide directly to us, such as when you contact us for services, request a quote, or schedule an appointment. This may include:
               </p>
               <ul className="list-disc pl-6 text-slate-600 space-y-2">
                 <li>Name and contact information (phone number, email, address)</li>
@@ -78,10 +78,10 @@ export default function PrivacyPolicy() {
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
               <div className="bg-slate-50 rounded-lg p-4 mt-4">
-                <p className="text-slate-600">Houston Pro Plumbing</p>
+                <p className="text-slate-600">DYZ Plumbing</p>
                 <p className="text-slate-600">Houston, TX</p>
-                <p className="text-slate-600">Phone: (832) 555-0123</p>
-                <p className="text-slate-600">Email: info@houstonproplumbing.com</p>
+                <p className="text-slate-600">Phone: (713) 555-0123</p>
+                <p className="text-slate-600">Email: service@dyzplumbing.com</p>
               </div>
             </section>
           </div>
