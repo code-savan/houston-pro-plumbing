@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Phone, Mail, Calendar, Clock, User, Home, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BUSINESS_DETAILS } from '@/lib/constants';
@@ -23,6 +23,28 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Mobile focus and scroll management
+  useEffect(() => {
+    if (isOpen) {
+      // Prevent body scroll on mobile
+      document.body.style.overflow = 'hidden';
+
+      // Focus the modal container for accessibility
+      const modalElement = document.querySelector('[role="dialog"]');
+      if (modalElement) {
+        (modalElement as HTMLElement).focus();
+      }
+    } else {
+      // Restore body scroll
+      document.body.style.overflow = '';
+    }
+
+    // Cleanup
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
 
   const services = [
     'Emergency Plumbing Repairs',
@@ -51,7 +73,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -79,29 +101,32 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 z-[99998] md:hidden"
+            className="fixed inset-0 bg-black/50 z-[999999] md:hidden"
             onClick={onClose}
           />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 z-[99998] hidden md:block"
+            className="fixed inset-0 bg-black/50 z-[999999] hidden md:block"
             onClick={onClose}
           />
-          
+
           {/* Modal */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="fixed inset-0 z-[99999] md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-2xl md:max-h-[90vh] bg-white md:rounded-2xl shadow-2xl overflow-hidden"
+            className="fixed inset-0 z-[999999] md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-2xl md:max-h-[90vh] bg-white md:rounded-2xl shadow-2xl overflow-hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="booking-modal-title"
           >
             {/* Header */}
             <div className="bg-navy text-white p-4 md:p-6 flex justify-between items-center">
               <div>
-                <h2 className="text-xl md:text-2xl font-display font-bold">Book Your Service</h2>
+                <h2 id="booking-modal-title" className="text-xl md:text-2xl font-display font-bold">Book Your Service</h2>
                 <p className="text-gray-300 text-sm mt-1">Get a free quote from DYZ Plumbing</p>
               </div>
               <button
