@@ -1,11 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { Phone, CheckCircle, Shield, Clock, Star, Users, Award, Mail, MapPin, Facebook, Instagram, Twitter, ArrowUp } from 'lucide-react';
 import { BUSINESS_DETAILS } from '@/lib/constants';
 import { motion } from 'motion/react';
 import Navbar from './Navbar';
+import BookingModal from './BookingModal';
 
 const services = [
   {
@@ -92,6 +93,8 @@ const testimonials = [
 ];
 
 export default function LandingPage() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
   return (
     <div>
       {/* Hero Section */}
@@ -139,12 +142,12 @@ export default function LandingPage() {
                   <Phone className="group-hover:animate-bounce" />
                   Call Now for a Free Quote
                 </a>
-                <a
-                  href="#services"
+                <button
+                  onClick={() => setIsBookingModalOpen(true)}
                   className="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold text-lg md:text-xl text-white border-2 border-white/30 hover:bg-white/10 transition-all backdrop-blur-sm"
                 >
-                  Our Services
-                </a>
+                  Book Service
+                </button>
               </div>
             </motion.div>
           </div>
@@ -526,6 +529,12 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+
+      {/* Booking Modal */}
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      />
     </div>
   );
 }
